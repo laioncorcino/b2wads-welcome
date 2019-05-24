@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-boilerplate",
+  "version": "0.1.0",
+  "description": "Boilerplate para projetos NodeJS",
+  "main": "app.js",
+  "dependencies": {
+    "express": "4.17.0"
+  },
+  "devDependencies": {
+    "codecov": "3.5.0",
+    "nyc": "14.1.1"
+  },
+  "scripts": {
+    "test:unit": "nyc npm test test/unit/*",
+    "test:all": "nyc npm test test/*",
+    "codecov": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/codecov --pipe",
+    "start:web": "",
+    "start:worker-*": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:b2wads/nodejs-boilerplate"
+  },
+  "keywords": [
+    "nodejs",
+    "boilerplate",
+    "webapp",
+    "worker"
+  ],
+  "author": "B2WADS",
+  "license": "MIT"
+}
