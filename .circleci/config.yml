@@ -1,0 +1,41 @@
+version: 2.1
+
+commands:
+  all-tests:
+    description: "Roda todos os testes do projeto (unitários e integração)"
+    steps:
+      - run: "./node_modules/.bin/nyc npm test"
+
+jobs:
+  node10x: &template
+    docker:
+      - image: circleci/node:10-jessie
+        #- image: mongo:3.6
+        #- image: elasticsearch:5
+        #- image: rabbitmq:3.6-alpine
+        #- image: redis:5
+    steps:
+      - checkout
+      - run:
+          name: Install deps
+          command: npm install
+      - all-tests
+      - run:
+          when: on_success
+          command: "npm run codecov"
+  node11x:
+      <<: *template
+      docker:
+        - image: circleci/node:11
+          #- image: mongo:3.6
+          #- image: elasticsearch:5
+          #- image: rabbitmq:3.6-alpine
+          #- image: redis:5
+workflows:
+  version: 2
+  required-checks:
+    jobs:
+      - node10x
+  optional-checks:
+    jobs:
+      - node11x

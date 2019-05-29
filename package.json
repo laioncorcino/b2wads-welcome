@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test:unit": "nyc npm test test/unit/*",
-    "test:all": "nyc npm test test/*",
+    "test": "nyc npm test test/*",
     "codecov": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/codecov --pipe",
     "start:web": "",
     "start:worker-*": ""
