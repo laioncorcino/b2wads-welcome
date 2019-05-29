@@ -148,13 +148,13 @@ import MysqlClient from "clients/mysql"
 Aqui focam os objetos com todas as configs do projeto. A ideia é que o index.js junte todas as "sub-configs" e exponha objetos para que sejam importados.
 
 ```js
-import MysqlConfig from "config"
+const MysqlConfig = require("config")
 ```
 
 ou
 
 ```js
-import MysqlConfig from "config/mysql"
+const MysqlConfig require("config/mysql")
 ```
 
 também seria válido.
