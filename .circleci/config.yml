@@ -4,12 +4,15 @@ commands:
   all-tests:
     description: "Roda todos os testes do projeto (unitários e integração)"
     steps:
-      - run: "./node_modules/.bin/nyc npm test"
+      - run: "./node_modules/.bin/jest --coverage"
 
 jobs:
   node10x: &template
     docker:
       - image: circleci/node:10-jessie
+        auth:
+          username: $B2WADS_DOCKER_REGISTRY_USERNAME
+          password: $B2WADS_DOCKER_REGISTRY_PASSWORD
         #- image: mongo:3.6
         #- image: elasticsearch:5
         #- image: rabbitmq:3.6-alpine
