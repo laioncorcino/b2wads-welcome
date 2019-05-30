@@ -1,7 +1,10 @@
-module.exports = {
+const HealthCheckService = require("../services/healthcheck-service")
+
+const HealthCheckController = {
   async check(req, res) {
-    await res.status(200).json({
-      status: "ok"
-    })
+    const status = await HealthCheckService.check()
+    await res.status(200).json(status)
   }
 }
+
+module.exports = HealthCheckController
