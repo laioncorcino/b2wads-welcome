@@ -8,14 +8,17 @@
   },
   "devDependencies": {
     "codecov": "3.5.0",
-    "nyc": "14.1.1"
+    "jest": "24.8.0"
   },
   "scripts": {
-    "test:unit": "nyc npm test test/unit/*",
-    "test": "nyc npm test test/*",
-    "codecov": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/codecov --pipe",
-    "start:web": "",
-    "start:worker-*": ""
+    "test:unit": "./node_modules/.bin/jest --coverage test test/unit/*",
+    "test": "./node_modules/.bin/jest --coverage",
+    "codecov": "./node_modules/.bin/codecov",
+    "start": "node ",
+    "start:web": "node app.js",
+    "worker:<worker-name>": "node worker/<worker-name.js>",
+    "cron:<cron-name>": "node scripts/cron-<cron-name>.js",
+    "fix:<fix-name>": "node scripts/fix-<fix-name>.js"
   },
   "repository": {
     "type": "git",
