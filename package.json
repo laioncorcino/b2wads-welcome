@@ -9,14 +9,13 @@
   "devDependencies": {
     "codecov": "3.5.0",
     "jest": "24.8.0",
-    "nyc": "14.1.1",
     "supertest": "4.0.2"
   },
   "scripts": {
-    "test:unit": "nyc npm test test/unit/*",
+    "test:unit": "./node_modules/.bin/jest --coverage test test/unit/*",
     "test": "./node_modules/.bin/jest --coverage",
-    "codecov": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/codecov --pipe",
-    "start": "node ./bin/www",
+    "codecov": "./node_modules/.bin/codecov",
+    "start": "node ",
     "start:web": "node app.js",
     "worker:<worker-name>": "node worker/<worker-name.js>",
     "cron:<cron-name>": "node scripts/cron-<cron-name>.js",
