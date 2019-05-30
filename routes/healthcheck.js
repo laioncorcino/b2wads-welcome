@@ -1,8 +1,8 @@
 const routes = require("express").Router()
-const HealthcheckController = require('../controllers/healthcheck-controller')
+const HealthCheckController = require('../controllers/healthcheck-controller')
 
 routes.use("/healthcheck", [
-  routes.get("/", HealthcheckController.check)
+  routes.get("/", HealthCheckController.status)
 ])
 
 module.exports = routes

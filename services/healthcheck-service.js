@@ -1,5 +1,5 @@
 const HealthCheckService = {
-  async check() {
+  async status() {
     return await {
       status: "ok"
     }

@@ -2,7 +2,7 @@ const request = require("supertest")
 
 const app = require("../../../app")
 
-describe("Healthcheck test", () => {
+describe("HealthCheck test", () => {
   describe("GET /healthcheck", () => {
     let res = undefined
 

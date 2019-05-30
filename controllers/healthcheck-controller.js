@@ -1,8 +1,8 @@
 const HealthCheckService = require("../services/healthcheck-service")
 
 const HealthCheckController = {
-  async check(req, res) {
-    const status = await HealthCheckService.check()
+  async status(req, res) {
+    const status = await HealthCheckService.status()
     await res.status(200).json(status)
   }
 }
