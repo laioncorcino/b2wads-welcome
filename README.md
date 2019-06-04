@@ -1,6 +1,6 @@
 # b2wads-welcome
 
-[![codecov](https://codecov.io/gh/b2wads/b2wads-welcome/branch/feature%2Fchallenge/graph/badge.svg?token=kAuzTXzjjm)](https://codecov.io/gh/b2wads/b2wads-welcome)
+[![codecov](https://codecov.io/gh/b2wads/b2wads-welcome/branch/master/graph/badge.svg?token=kAuzTXzjjm)](https://codecov.io/gh/b2wads/b2wads-welcome)
 
 ---
 
@@ -24,7 +24,7 @@ npm start
 
 ### Passo a Passo
 
-1. Faça clone desse projeto localmente:
+- Faça clone desse projeto localmente:
 
 ```sh
 git clone https://github.com/b2wads/b2wads-welcome.git
@@ -37,6 +37,7 @@ git branch rick-sanchez
 ```
 
 - Entre no arquivo [services/welcome-service.js](services/welcome-service.js) e siga os comentários.
+- Entre no arquivo [services/welcome-controller.js](services/welcome-controller.js) e siga os comentários.
 - Entre no arquivo [test/acceptance/routes/welcome.spec.js](test/acceptance/routes/welcome.spec.js) e siga os comentários.
 - Entre no arquivo [test/unit/services/welcome.spec.js](test/unit/services/welcome.spec.js) e siga os comentários.
 - Rode `npm test` e verifique a saída do terminal. Você deve obter um resultado semelhante a esse:
