@@ -7,8 +7,6 @@
 ## Índice
 
 - [Introdução](https://github.com/b2wads/b2wads-welcome#introdução)
-- [Stack](https://github.com/b2wads/b2wads-welcome#stack)
-- [Variáveis de ambiente](https://github.com/b2wads/b2wads-welcome#variáveis-de-ambiente)
 - [Como rodar](https://github.com/b2wads/b2wads-welcome/blob#como-rodar)
 - [Passo a passo](https://github.com/b2wads/b2wads-welcome#passo-a-passo)
 - [Scripts](https://github.com/b2wads/b2wads-welcome#scripts)
@@ -16,11 +14,6 @@
 ### Introdução
 
 Projeto de boas vindas a novos integrantes do B2WADS. b2wads-welcome é um projeto escrito em NodeJS, que utiliza os padrões de código definidos em [nodejs-boilerplate](https://github.com/b2wads/nodejs-boilerplate) e tem como objetivo, ser a ambientação aos projetos desenvolvidos pelo time do B2WADS.
-
-### Stack
-
-- [Node 10.13](https://nodejs.org/fr/blog/release/v10.13.0/)
-- [Express 4.x](https://expressjs.com/pt-br/4x/api.html)
 
 ### Como rodar
 
