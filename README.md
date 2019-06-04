@@ -24,12 +24,7 @@ npm start
 
 ### Passo a Passo
 
-- Faça clone desse projeto localmente:
-
-```sh
-git clone https://github.com/b2wads/b2wads-welcome.git
-```
-
+- Faça clone desse projeto
 - Crie um branch com seu primeiro e ultimo nome:
 
 ```sh
@@ -78,12 +73,8 @@ Ran all test suites.
 ```
 
 - Acesse [http://localhost:3000/welcome](http://localhost:3000/welcome) e veja o resultado
-- Faça commit das suas alterações personalizando sua mensagem. [Saiba mais](https://git-scm.com/book/pt-br/v1/Git-Essencial-Gravando-Altera%C3%A7%C3%B5es-no-Reposit%C3%B3rio):
-
-```sh
-git commit -am "<minha mensagem personalizada>"
-```
-
+- Faça commit e push da sua branch
+- Abra um PR da sua branch para a branch `master` para que o time possa revisar
 - Faça deploy da sua aplicação em ambiente de homologação com Asgard (peça ajuda do time)
 - Remova sua aplicação do ambiente de homologação após testar a rota `/welcome`
 
