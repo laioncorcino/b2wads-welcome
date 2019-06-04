@@ -38,8 +38,8 @@ git branch rick-sanchez
 
 - Entre no arquivo [services/welcome-service.js](services/welcome-service.js) e siga os comentários.
 - Entre no arquivo [services/welcome-controller.js](services/welcome-controller.js) e siga os comentários.
-- Entre no arquivo [test/acceptance/routes/welcome.spec.js](test/acceptance/routes/welcome.spec.js) e siga os comentários.
 - Entre no arquivo [test/unit/services/welcome.spec.js](test/unit/services/welcome.spec.js) e siga os comentários.
+- Entre no arquivo [test/acceptance/routes/welcome.spec.js](test/acceptance/routes/welcome.spec.js) e siga os comentários.
 - Rode `npm test` e verifique a saída do terminal. Você deve obter um resultado semelhante a esse:
 
 ```sh
@@ -85,6 +85,7 @@ git commit -am "<minha mensagem personalizada>"
 ```
 
 - Faça deploy da sua aplicação em ambiente de homologação com Asgard (peça ajuda do time)
+- Remova sua aplicação do ambiente de homologação após testar a rota `/welcome`
 
 ### Scripts
 

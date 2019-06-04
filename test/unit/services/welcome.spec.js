@@ -1,10 +1,9 @@
 /**
- * Assim como você implementou os testes de aceitação,
- * agora você irá implementar os testes unitários da sua app.
+ * Agora você irá implementar os testes unitários da sua app.
  *
- * Você deverá verificar se:
+ * Você deverá validar se:
  *
- * - o Método welcome() em services/welcome-service.js está
+ * - o Método `welcome()` em `services/welcome-service.js` está
  *   retornando o que você configurou no objeto `newB`
  * - Remover o caso de teste `should pass` abaixo
  *
