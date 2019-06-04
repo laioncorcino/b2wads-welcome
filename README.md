@@ -94,5 +94,3 @@ git commit -am "<minha mensagem personalizada>"
 - `test:unit`: Roda os testes unitários
 - `test:integration`: Roda os testes de integração
 - `test:acceptance`: Roda os testes de aceitação
-- `format`: Formata o estilo de código
-- `format:check`: Valida formatação do estilo de código, sem alterar nada

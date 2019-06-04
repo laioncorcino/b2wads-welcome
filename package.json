@@ -12,14 +12,11 @@
     "supertest": "4.0.2"
   },
   "scripts": {
-    "test:unit": "./node_modules/.bin/jest --coverage test test/unit/*",
-    "test": "./node_modules/.bin/jest --coverage",
-    "codecov": "./node_modules/.bin/codecov",
     "start": "node ./bin/www",
-    "start:web": "node app.js",
-    "worker:<worker-name>": "node worker/<worker-name.js>",
-    "cron:<cron-name>": "node scripts/cron-<cron-name>.js",
-    "fix:<fix-name>": "node scripts/fix-<fix-name>.js"
+    "test": "./node_modules/.bin/jest --coverage",
+    "test:unit": "./node_modules/.bin/jest --coverage test test/unit/*",
+    "test:integration": "./node_modules/.bin/jest --coverage test test/integration/*",
+    "test:acceptance": "./node_modules/.bin/jest --coverage test test/acceptance/*"
   },
   "repository": {
     "type": "git",
