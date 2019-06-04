@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-boilerplate",
+  "name": "b2wads-welcome",
   "version": "0.1.0",
-  "description": "Boilerplate para projetos NodeJS",
+  "description": "Projeto de boas vindas a novos integrantes do B2WADS.",
   "main": "app.js",
   "dependencies": {
     "express": "4.17.0"
@@ -20,11 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com:b2wads/nodejs-boilerplate"
+    "url": "github.com:b2wads/b2wads-welcome"
   },
   "keywords": [
     "nodejs",
-    "boilerplate",
     "webapp",
     "worker"
   ],

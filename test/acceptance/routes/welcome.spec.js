@@ -1,5 +1,5 @@
 /**
- * Assim como você implementou os testes de aceitação,
+ * Assim como você implementou os testes unitários,
  * agora é o momento de implementar os testes de aceitação da sua app.
  *
  * Você deverá enviar uma requisição para a rota `/welcome` e verificar se:
