@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-boilerplate",
+  "name": "b2wads-welcome",
   "version": "0.1.0",
-  "description": "Boilerplate para projetos NodeJS",
+  "description": "Projeto de boas vindas a novos integrantes do B2WADS.",
   "main": "app.js",
   "dependencies": {
     "express": "4.17.0"
@@ -12,22 +12,19 @@
     "supertest": "4.0.2"
   },
   "scripts": {
-    "test:unit": "./node_modules/.bin/jest --coverage test test/unit/*",
+    "start": "node ./bin/www",
     "test": "./node_modules/.bin/jest --coverage",
-    "codecov": "./node_modules/.bin/codecov",
-    "start": "node ",
-    "start:web": "node app.js",
-    "worker:<worker-name>": "node worker/<worker-name.js>",
-    "cron:<cron-name>": "node scripts/cron-<cron-name>.js",
-    "fix:<fix-name>": "node scripts/fix-<fix-name>.js"
+    "test:unit": "./node_modules/.bin/jest --coverage test test/unit/*",
+    "test:integration": "./node_modules/.bin/jest --coverage test test/integration/*",
+    "test:acceptance": "./node_modules/.bin/jest --coverage test test/acceptance/*",
+    "codecov": "./node_modules/.bin/codecov"
   },
   "repository": {
     "type": "git",
-    "url": "github.com:b2wads/nodejs-boilerplate"
+    "url": "github.com:b2wads/b2wads-welcome"
   },
   "keywords": [
     "nodejs",
-    "boilerplate",
     "webapp",
     "worker"
   ],

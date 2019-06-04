@@ -1,6 +1,6 @@
 # b2wads-welcome
 
-[![codecov](https://codecov.io/gh/b2wads/b2wads-welcome/branch/feature%2Fchallenge/graph/badge.svg?token=kAuzTXzjjm)](https://codecov.io/gh/b2wads/b2wads-welcome)
+[![codecov](https://codecov.io/gh/b2wads/b2wads-welcome/branch/master/graph/badge.svg?token=kAuzTXzjjm)](https://codecov.io/gh/b2wads/b2wads-welcome)
 
 ---
 
@@ -24,12 +24,7 @@ npm start
 
 ### Passo a Passo
 
-1. Faça clone desse projeto localmente:
-
-```sh
-git clone https://github.com/b2wads/b2wads-welcome.git
-```
-
+- Faça clone desse projeto
 - Crie um branch com seu primeiro e ultimo nome:
 
 ```sh
@@ -37,8 +32,9 @@ git branch rick-sanchez
 ```
 
 - Entre no arquivo [services/welcome-service.js](services/welcome-service.js) e siga os comentários.
-- Entre no arquivo [test/acceptance/routes/welcome.spec.js](test/acceptance/routes/welcome.spec.js) e siga os comentários.
+- Entre no arquivo [services/welcome-controller.js](services/welcome-controller.js) e siga os comentários.
 - Entre no arquivo [test/unit/services/welcome.spec.js](test/unit/services/welcome.spec.js) e siga os comentários.
+- Entre no arquivo [test/acceptance/routes/welcome.spec.js](test/acceptance/routes/welcome.spec.js) e siga os comentários.
 - Rode `npm test` e verifique a saída do terminal. Você deve obter um resultado semelhante a esse:
 
 ```sh
@@ -77,13 +73,10 @@ Ran all test suites.
 ```
 
 - Acesse [http://localhost:3000/welcome](http://localhost:3000/welcome) e veja o resultado
-- Faça commit das suas alterações personalizando sua mensagem. [Saiba mais](https://git-scm.com/book/pt-br/v1/Git-Essencial-Gravando-Altera%C3%A7%C3%B5es-no-Reposit%C3%B3rio):
-
-```sh
-git commit -am "<minha mensagem personalizada>"
-```
-
+- Faça commit e push da sua branch
+- Abra um PR da sua branch para a branch `master` para que o time possa revisar
 - Faça deploy da sua aplicação em ambiente de homologação com Asgard (peça ajuda do time)
+- Remova sua aplicação do ambiente de homologação após testar a rota `/welcome`
 
 ### Scripts
 
@@ -92,5 +85,3 @@ git commit -am "<minha mensagem personalizada>"
 - `test:unit`: Roda os testes unitários
 - `test:integration`: Roda os testes de integração
 - `test:acceptance`: Roda os testes de aceitação
-- `format`: Formata o estilo de código
-- `format:check`: Valida formatação do estilo de código, sem alterar nada
