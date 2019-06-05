@@ -11,7 +11,7 @@
  * Saiba mais em: https://jestjs.io/en/
  */
 
-const service = require('../../../services/welcome-service');
+const welcomeService = require('../../../services/welcome-service');
 
 test('teste service', async () => {
   const data = {
@@ -19,7 +19,7 @@ test('teste service', async () => {
     "Idade ":"32",
     "Cargo ":"Desenvolvedor"
   }
-  const response = await service.welcome();
+  const response = await welcomeService.welcome();
   expect(data).toStrictEqual(response);
 });
 

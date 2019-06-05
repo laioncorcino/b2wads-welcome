@@ -1,4 +1,4 @@
-const service = require('../services/welcome-service');
+const welcomeService = require('../services/welcome-service');
 
 
 const WelcomeController = {
@@ -10,7 +10,7 @@ const WelcomeController = {
      * de services/welcome-service.js
      */
 
-    await res.status(200).json(await service.welcome());
+    await res.status(200).json(await welcomeService.welcome());
   }
 }
 
