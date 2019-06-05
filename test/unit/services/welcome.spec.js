@@ -11,6 +11,15 @@
  * Saiba mais em: https://jestjs.io/en/
  */
 
-it('should pass', () => {
-  expect(true).toBe(true)
-})
+const service = require('../../../services/welcome-service');
+
+test('teste service', async () => {
+  const data = {
+    "Nome ": "Jonatas Rodrigues",
+    "Idade ":"32",
+    "Cargo ":"Desenvolvedor"
+  }
+  const response = await service.welcome();
+  expect(data).toStrictEqual(response);
+});
+

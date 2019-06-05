@@ -11,7 +11,32 @@
  * Utilizamos a biblioteca Jest para escrever nossos testes
  * Saiba mais em: https://jestjs.io/en/
  */
+const request = require("supertest")
 
-it('should pass', () => {
-  expect(true).toBe(true)
+const app = require("../../../app")
+
+
+describe("este integracao", () => {
+  describe("GET /welcome", () => {
+
+    const data = {
+      "Nome ": "Jonatas Rodrigues",
+      "Idade ":"32",
+      "Cargo ":"Desenvolvedor"
+    }
+
+    let res = undefined
+
+    beforeAll(async () => {
+      res = await request(app).get("/welcome")
+    })
+    
+    it("Deve retornar 200", () => {
+      expect(res.status).toBe(200)
+    })
+
+    it("Deve retornar {data}", () => {
+      expect(res.body).toStrictEqual(data)
+    })
+  })
 })
