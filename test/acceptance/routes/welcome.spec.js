@@ -11,12 +11,13 @@
  * Utilizamos a biblioteca Jest para escrever nossos testes
  * Saiba mais em: https://jestjs.io/en/
  */
+var HttpStatus = require('http-status-codes');
 const request = require("supertest")
 
 const app = require("../../../app")
 
 
-describe("este integracao", () => {
+describe("teste integracao", () => {
   describe("GET /welcome", () => {
 
     const data = {
@@ -25,14 +26,14 @@ describe("este integracao", () => {
       "Cargo ":"Desenvolvedor"
     }
 
-    let res = undefined
+    let res;
 
     beforeAll(async () => {
       res = await request(app).get("/welcome")
     })
-    
+
     it("Deve retornar 200", () => {
-      expect(res.status).toBe(200)
+      expect(res.status).toBe(HttpStatus.OK)
     })
 
     it("Deve retornar {data}", () => {

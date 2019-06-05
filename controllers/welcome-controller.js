@@ -1,3 +1,5 @@
+var HttpStatus = require('http-status-codes');
+
 const welcomeService = require('../services/welcome-service');
 
 
@@ -10,7 +12,7 @@ const WelcomeController = {
      * de services/welcome-service.js
      */
 
-    await res.status(200).json(await welcomeService.welcome());
+    res.status(HttpStatus.OK).json(await welcomeService.welcome());
   }
 }
 
