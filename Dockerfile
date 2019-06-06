@@ -1,5 +1,6 @@
 FROM node:10
-WORKDIR . /var/current
+
+WORKDIR /var/current
 
 COPY . /var/current
 
