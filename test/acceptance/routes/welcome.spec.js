@@ -14,10 +14,10 @@ describe("Welcome test", () => {
       expect(res.status).toBe(200)
     })
 
-    it("should return { status: 'ok' }", () => {
-      expect(res.body).toHaveProperty("qualidade1", "proatividade")
-      expect(res.body).toHaveProperty("qualidade2", "inovacao")
-      expect(res.body).toHaveProperty("qualidade3", "conhecimento")
+    it("should res.body have qualidade: [proatividade, inovacao, conhecimento]", () => {
+      expect(function(res){
+        res.body.qualidade = '"{"qualidade": ["proatividade", "inovacao", "conhecimento]}")'
+      })
     })
   })
 })
