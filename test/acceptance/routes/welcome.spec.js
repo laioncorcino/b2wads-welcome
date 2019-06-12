@@ -15,9 +15,9 @@ describe("Welcome test", () => {
     })
 
     it("should res.body have qualidade: [proatividade, inovacao, conhecimento]", () => {
-      expect(function(res){
-        res.body.qualidade = '"{"qualidade": ["proatividade", "inovacao", "conhecimento]}")'
-      })
+      expect(res.body.qualidade).toContain("proatividade")
+      expect(res.body.qualidade).toContain("inovacao")
+      expect(res.body.qualidade).toContain("conhecimento")
     })
   })
 })
