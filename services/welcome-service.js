@@ -13,7 +13,7 @@ const WelcomeService = {
      */
 
     const newB = {
-      // Adicione propriedades aqui
+      name: 'stag'
     }
 
     return newB
