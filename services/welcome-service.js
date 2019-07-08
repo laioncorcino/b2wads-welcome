@@ -1,3 +1,5 @@
+//Teste.
+
 const WelcomeService = {
   async welcome() {
     /**
