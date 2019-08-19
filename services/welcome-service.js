@@ -12,12 +12,14 @@ const WelcomeService = {
      *
      */
 
-    const newB = {
+    const cliente = {
+      nome: "Raphael",
+      sobrenome: "Fleury"
       // Adicione propriedades aqui
-    }
+    };
 
-    return newB
+    return cliente;
   }
-}
+};
 
-module.exports = WelcomeService
+module.exports = WelcomeService;
