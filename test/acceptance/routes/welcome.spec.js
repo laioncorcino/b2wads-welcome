@@ -35,7 +35,7 @@ describe("Welcome test", () => {
       expect(res.status).toBe(200)
     });
 
-    it("should return { status: 'ok' }", () => {
+    it("should return correct structure for the client", () => {
       expect(res.body).toStrictEqual(clientExpected)
     })
   })
