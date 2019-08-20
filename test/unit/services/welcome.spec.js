@@ -11,20 +11,24 @@ const {welcome} = require('../../../services/welcome-service');
  * Utilizamos a biblioteca Jest para escrever nossos testes
  * Saiba mais em: https://jestjs.io/en/
  */
+describe("Welcome test", () => {
+  describe("[SERVICE] welcome()", () => {
+    it('return with json struture expected', async () => {
+      //arrange
+      const clienteExpected = {
+        nome: "Raphael",
+        sobrenome: "Fleury",
+        idade: 24,
+        cargo: "estagiario"
+      };
 
-it('return with json struture expected',async () => {
-  //arrange
-  const clienteExpected = {
-    nome: "Raphael",
-    sobrenome: "Fleury",
-    idade: 24,
-    cargo: "estagiario"
-  };
+      // Act
+      client = await welcome();
 
-  // Act
-  client = await welcome();
+      // Assert
+      expect(clienteExpected).toStrictEqual(client);
+      expect.assertions(1);
+    })
+  })
+})
 
-  // Assert
-  expect(clienteExpected).toStrictEqual(client);
-  expect.assertions(1);
-});
