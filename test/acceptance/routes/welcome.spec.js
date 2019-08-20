@@ -1,3 +1,7 @@
+const request = require("supertest")
+const app = require("../../../app")
+
+
 /**
  * Assim como você implementou os testes unitários,
  * agora é o momento de implementar os testes de aceitação da sua app.
@@ -6,12 +10,33 @@
  *
  * - O status retornado (`req.status`) é igual a `200`
  * - O conteúdo retornado da request (`req.body`) é igual ao que você informou em `newB`
- * - Remover o caso de teste `should pass` abaixo 
+ * - Remover o caso de teste `should pass` abaixo
  *
  * Utilizamos a biblioteca Jest para escrever nossos testes
  * Saiba mais em: https://jestjs.io/en/
  */
 
-it('should pass', () => {
-  expect(true).toBe(true)
+describe("Welcome test", () => {
+  describe("GET /welcome", () => {
+    const clientExpected = {
+      nome: "Raphael",
+      sobrenome: "Fleury",
+      idade: 24,
+      cargo: "estagiario"
+    };
+
+    let res = undefined;
+
+    beforeAll(async () => {
+      res = await request(app).get("/welcome")
+    });
+
+    it("should return 200", () => {
+      expect(res.status).toBe(200)
+    });
+
+    it("should return { status: 'ok' }", () => {
+      expect(res.body).toStrictEqual(clientExpected)
+    })
+  })
 })

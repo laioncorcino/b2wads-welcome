@@ -14,8 +14,9 @@ const WelcomeService = {
 
     const cliente = {
       nome: "Raphael",
-      sobrenome: "Fleury"
-      // Adicione propriedades aqui
+      sobrenome: "Fleury",
+      idade: 24,
+      cargo: "estagiario"
     };
 
     return cliente;

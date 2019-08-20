@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c097e32b-eee5-48f9-91c9-294359e31e74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/b2wads-welcome.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/welcome-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/welcome-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/welcome-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/welcome-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/acceptance/routes/welcome.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/acceptance/routes/welcome.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/unit/services/welcome.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/services/welcome.spec.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Pf2t24jFgAmQzHyh598m3HkJhU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Jest.Welcome test">
+    <configuration name="Welcome test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/acceptance/routes/welcome.spec.js" />
+      <test-names>
+        <test-name value="Welcome test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="return with json struture expected" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/unit/services/welcome.spec.js" />
+      <test-names>
+        <test-name value="return with json struture expected" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should pass" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/acceptance/routes/welcome.spec.js" />
+      <test-names>
+        <test-name value="should pass" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Welcome test" />
+        <item itemvalue="Jest.should pass" />
+        <item itemvalue="Jest.return with json struture expected" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c097e32b-eee5-48f9-91c9-294359e31e74" name="Default Changelist" comment="" />
+      <created>1566251040418</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566251040418</updated>
+      <workItem from="1566251042964" duration="5480000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
