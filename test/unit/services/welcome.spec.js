@@ -1,3 +1,4 @@
+const welcomeService = require('../../../services/welcome-service');
 /**
  * Agora você irá implementar os testes unitários da sua app.
  *
@@ -11,6 +12,12 @@
  * Saiba mais em: https://jestjs.io/en/
  */
 
-it('should pass', () => {
-  expect(true).toBe(true)
-})
+it('retorna dados newB', async () => {
+  expect((await welcomeService.welcome())).toMatchObject({
+    nome: "Isabella Cunha",
+    idade: 23,
+    curso: "Sistemas de Informacao",  
+    universidade: "UFF",
+    periodo: "6",
+  });
+});
