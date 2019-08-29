@@ -13,11 +13,14 @@ const WelcomeService = {
      */
 
     const newB = {
-      // Adicione propriedades aqui
+      firstName: "José",
+      lastName: "Lício",
+      age: 24,
+      get fullName() { return `${this.firstName} ${this.lastName}`; }
     }
 
-    return newB
+    return newB;
   }
 }
 
-module.exports = WelcomeService
+module.exports = WelcomeService;
