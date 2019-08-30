@@ -15,12 +15,18 @@ const app = require('../../../app');
  */
 
 describe('valida rotas', () => {
+  let res;
+  
+  beforeAll(async () => {
+    res = await request(app).get('/welcome');
+  });
+
   it('retorna status 200', async () => {
-    await request(app).get('/welcome').expect(200);
+    expect(res.status).toEqual(200);
   });
 
   it('retorna objeto newB', async () => {
-    await request(app).get('/welcome').expect({
+    expect(res.body).toEqual({
       nome: "Isabella Cunha",
       idade: 23,
       curso: "Sistemas de Informacao",  

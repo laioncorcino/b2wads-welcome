@@ -11,13 +11,15 @@ const welcomeService = require('../../../services/welcome-service');
  * Utilizamos a biblioteca Jest para escrever nossos testes
  * Saiba mais em: https://jestjs.io/en/
  */
-
-it('retorna dados newB', async () => {
-  expect((await welcomeService.welcome())).toMatchObject({
-    nome: "Isabella Cunha",
-    idade: 23,
-    curso: "Sistemas de Informacao",  
-    universidade: "UFF",
-    periodo: "6",
+describe('welcomeServices unit', () => {
+  it('retorna dados newB', async () => {
+    const data = await welcomeService.welcome();
+    expect(data).toMatchObject({
+      nome: "Isabella Cunha",
+      idade: 23,
+      curso: "Sistemas de Informacao",  
+      universidade: "UFF",
+      periodo: "6",
+    });
   });
-});
+})
