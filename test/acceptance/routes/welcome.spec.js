@@ -17,16 +17,18 @@ const app = require('../../../app');
 
  describe('Routes tests', () => {
 
-  it('GET /welcome returns 200', async () => {
-    await request(app)
-      .get('/welcome')
-      .expect(200);
+  let response;
+
+  beforeAll(async () => {
+    response = await request(app).get('/welcome');
+  })
+
+  it('GET /welcome should return 200', async () => {
+    expect(response.status).toEqual(200);
   });
 
-   it('GET /welcome returns object created at WelcomeService', async () => {
-     await request(app)
-      .get('/welcome')
-      .expect({
+   it('GET /welcome should return object created at WelcomeService', async () => {
+     expect(response.body).toEqual({
         firstName: 'José',
         lastName: 'Lício',
         age: 24,
