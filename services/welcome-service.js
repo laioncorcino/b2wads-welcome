@@ -14,11 +14,6 @@ const WelcomeService = {
 
     const newB = {
       // Adicione propriedades aqui
-      nome: "Isabella Cunha",
-      idade: 23,
-      curso: "Sistemas de Informacao",
-      universidade: "UFF",
-      periodo: "6",
     }
 
     return newB
