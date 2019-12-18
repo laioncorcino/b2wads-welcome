@@ -14,6 +14,11 @@ const WelcomeService = {
 
     const newB = {
       // Adicione propriedades aqui
+      name: "Igor Assuncao",
+      nickname: "Igor Bom / Igor Princeso",
+      age: 23,
+      team: "Afiliados",
+      skills: ["Node.Js", "Python", "Docker"]
     }
 
     return newB

@@ -1,3 +1,7 @@
+const supertest = require("supertest")
+
+const app = require('../../../app')
+
 /**
  * Assim como você implementou os testes unitários,
  * agora é o momento de implementar os testes de aceitação da sua app.
@@ -12,6 +16,17 @@
  * Saiba mais em: https://jestjs.io/en/
  */
 
-it('should pass', () => {
-  expect(true).toBe(true)
+describe('welcome routes', () => {
+  describe('/', () => {
+    it('should return status 200 and a valid object', async() => {
+      const result = await supertest(app).get('/welcome')
+
+      expect(result.status).toBe(200)
+      expect(result.body).toHaveProperty('name')
+      expect(result.body).toHaveProperty('nickname')
+      expect(result.body).toHaveProperty('age')
+      expect(result.body).toHaveProperty('team')
+      expect(result.body).toHaveProperty('skills')
+    })
+  })
 })

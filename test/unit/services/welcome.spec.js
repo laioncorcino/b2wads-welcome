@@ -11,6 +11,26 @@
  * Saiba mais em: https://jestjs.io/en/
  */
 
-it('should pass', () => {
-  expect(true).toBe(true)
+const welcomeService = require('../../../services/welcome-service')
+
+describe('welcomeService', () => {
+  describe('welcome()', () => {
+    it('should pass when the object returned has the properties specified', async () => {
+      const result = await welcomeService.welcome();
+
+      expect(result).toHaveProperty('name')
+      expect(result).toHaveProperty('nickname')
+      expect(result).toHaveProperty('age')
+      expect(result).toHaveProperty('team')
+      expect(result).toHaveProperty('skills')
+
+      expect(result).toMatchObject({
+        name: 'Igor Assuncao',
+        nickname: 'Igor Bom / Igor Princeso',
+        age: 23,
+        team: 'Afiliados',
+        skills: ['Node.Js', 'Python', 'Docker']
+      })
+    })
+  })
 })
