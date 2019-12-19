@@ -17,16 +17,24 @@ const app = require('../../../app')
  */
 
 describe('welcome routes', () => {
-  describe('/', () => {
-    it('should return status 200 and a valid object', async() => {
-      const result = await supertest(app).get('/welcome')
+  describe('/welcome', () => {
+    it('should return status 200 and a valid object', async () => {
+      const res = await supertest(app).get('/welcome')
 
-      expect(result.status).toBe(200)
-      expect(result.body).toHaveProperty('name')
-      expect(result.body).toHaveProperty('nickname')
-      expect(result.body).toHaveProperty('age')
-      expect(result.body).toHaveProperty('team')
-      expect(result.body).toHaveProperty('skills')
+      expect(res.status).toEqual(200)
+      expect(res.body).toHaveProperty('name')
+      expect(res.body).toHaveProperty('nickname')
+      expect(res.body).toHaveProperty('age')
+      expect(res.body).toHaveProperty('team')
+      expect(res.body).toHaveProperty('skills')
+    })
+  })
+
+  describe('/examle', () => {
+    it('should return 404', async () => {
+      const res = await supertest(app).get('/example')
+
+      expect(res.status).toEqual(404)
     })
   })
 })
