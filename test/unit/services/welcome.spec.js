@@ -15,7 +15,7 @@ const welcomeService = require('../../../services/welcome-service')
 
 describe('welcomeService', () => {
   describe('welcome()', () => {
-    it('should pass when the object returned has all the properties specified', async () => {
+    it('should pass when the object returned has all the properties specified and is equals to specified', async () => {
       const welcomeResult = await welcomeService.welcome()
 
       expect(welcomeResult).toHaveProperty('name')
@@ -23,11 +23,7 @@ describe('welcomeService', () => {
       expect(welcomeResult).toHaveProperty('age')
       expect(welcomeResult).toHaveProperty('team')
       expect(welcomeResult).toHaveProperty('skills')
-    })
-
-    it('should pass when the object is equal to the specified', async () => {
-      const welcomeResult = await welcomeService.welcome()
-
+      
       expect(welcomeResult).toMatchObject({
         name: 'Igor Assuncao',
         nickname: 'Igor Bom / Igor Princeso',
