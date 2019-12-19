@@ -30,7 +30,7 @@ describe('welcome routes', () => {
     })
   })
 
-  describe('/examle', () => {
+  describe('/example', () => {
     it('should return 404', async () => {
       const res = await supertest(app).get('/example')
 
