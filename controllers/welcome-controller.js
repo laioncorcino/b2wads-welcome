@@ -9,7 +9,7 @@ const WelcomeController = {
      * de services/welcome-service.js
      */
     const newB = await WelcomeService.welcome()
-    await res.status(200).json(newB)
+      res.json(newB)
     
   }
 }

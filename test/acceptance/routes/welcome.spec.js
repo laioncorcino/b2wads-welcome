@@ -16,7 +16,7 @@ const app = require("../../../app")
 
 describe("Welcome test", () => {
     describe("GET /welcome", () => {
-        let res = undefined
+        let res
         beforeAll( async () => {
             res = await request(app).get("/welcome")
         })
@@ -25,8 +25,10 @@ describe("Welcome test", () => {
             expect(res.status).toBe(200)
         })
         it("should return newB",() => {
-            expect(res.body.age).toBe(13)
-            expect(res.body.name).toBe("Nome")
+            expect(res.body).toMatchObject({
+                name:"Nome",
+                age:13
+              })
         })
     })
 })
