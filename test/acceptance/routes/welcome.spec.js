@@ -11,7 +11,22 @@
  * Utilizamos a biblioteca Jest para escrever nossos testes
  * Saiba mais em: https://jestjs.io/en/
  */
+const request = require("supertest")
+const app = require("../../../app")
 
-it('should pass', () => {
-  expect(true).toBe(true)
+describe("Welcome test", () => {
+    describe("GET /welcome", () => {
+        let res = undefined
+        beforeAll( async () => {
+            res = await request(app).get("/welcome")
+        })
+
+        it("should return 200",() => {
+            expect(res.status).toBe(200)
+        })
+        it("should return newB",() => {
+            expect(res.body.age).toBe(13)
+            expect(res.body.name).toBe("Nome")
+        })
+    })
 })

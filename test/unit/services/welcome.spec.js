@@ -10,7 +10,13 @@
  * Utilizamos a biblioteca Jest para escrever nossos testes
  * Saiba mais em: https://jestjs.io/en/
  */
-
-it('should pass', () => {
-  expect(true).toBe(true)
-})
+const WelcomeService = require("../../../services/welcome-service")
+ describe("WelcomeService", () => {
+   describe("welcome()", () => {
+     it("should return {newB} ", async () => {
+       const newB = await WelcomeService.welcome()
+       expect(newB.name).toBe("Nome");
+       expect(newB.age).toBe(13);
+     })
+   })
+ })

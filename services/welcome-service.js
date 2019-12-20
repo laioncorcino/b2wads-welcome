@@ -13,7 +13,8 @@ const WelcomeService = {
      */
 
     const newB = {
-      // Adicione propriedades aqui
+      name:"Nome",
+      age:13
     }
 
     return newB
