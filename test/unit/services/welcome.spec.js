@@ -1,16 +1,16 @@
-/**
- * Agora você irá implementar os testes unitários da sua app.
- *
- * Você deverá validar se:
- *
- * - o Método `welcome()` em `services/welcome-service.js` está
- *   retornando o que você configurou no objeto `newB`
- * - Remover o caso de teste `should pass` abaixo
- *
- * Utilizamos a biblioteca Jest para escrever nossos testes
- * Saiba mais em: https://jestjs.io/en/
- */
+const WelcomeService = require('../../../services/welcome-service')
 
-it('should pass', () => {
-  expect(true).toBe(true)
+describe('WelcomeService', () => {
+  describe('welcome()', () => {
+    it('should return the newB', async () => {
+      const result = await WelcomeService.welcome()
+
+      expect(result).toMatchObject({
+        nome: 'Victor Chiletto',
+        cargo: 'Dev Jr',
+        cargoReal: 'function(café): código',
+        admissao: new Date('2020-04-06T13:00:00Z'),
+      })
+    })
+  })
 })
