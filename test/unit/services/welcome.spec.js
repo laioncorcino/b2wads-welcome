@@ -11,6 +11,24 @@
  * Saiba mais em: https://jestjs.io/en/
  */
 
-it('should pass', () => {
-  expect(true).toBe(true)
+const welcomeService = require("../../../services/welcome-service")
+
+describe("welcomeService", () => {
+
+  describe("welcome", () => {
+
+    it('Test welcome properties', async () => {
+
+      let ws = await welcomeService.welcome()
+    
+      expect(ws.firstName).toBe("Phil")
+      expect(ws.lastName).toBe("Monteiro")
+      expect(ws.age).toBe(30)
+      expect(ws.job).toBe("Developer")
+    
+    })    
+
+  })
+
 })
+

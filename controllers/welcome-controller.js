@@ -1,3 +1,5 @@
+const welcomeService = require("../services/welcome-service")
+
 const WelcomeController = {
   async welcome(req, res) {
     
@@ -7,6 +9,9 @@ const WelcomeController = {
      * de services/welcome-service.js
      */
     
+    const ws = await welcomeService.welcome()
+    res.status(200).send(ws)
+
   }
 }
 

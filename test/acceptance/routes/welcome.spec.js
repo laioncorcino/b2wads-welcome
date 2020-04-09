@@ -12,6 +12,31 @@
  * Saiba mais em: https://jestjs.io/en/
  */
 
-it('should pass', () => {
-  expect(true).toBe(true)
+const request = require("supertest")
+const app = require("../../../app")
+
+describe("Test API", () => {
+
+  it("Test return code 200 API", async () => {
+
+    const res = await request(app).get("/welcome")
+
+    expect(res.statusCode).toBe(200)
+
+  })
+
+  it("Test body API", async () => {
+
+    const res = await request(app).get("/welcome")
+
+    expect(res.body.firstName).toBe("Phil")
+    expect(res.body.lastName).toBe("Monteiro")
+    expect(res.body.age).toBe(30)
+    expect(res.body.job).toBe("Developer")
+
+  })
+
 })
+
+
+

@@ -14,6 +14,12 @@ const WelcomeService = {
 
     const newB = {
       // Adicione propriedades aqui
+
+      firstName : "Phil",
+      lastName : "Monteiro",
+      age : 30,
+      job : "Developer"
+      
     }
 
     return newB
