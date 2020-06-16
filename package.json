@@ -19,6 +19,9 @@
     "test:acceptance": "./node_modules/.bin/jest --coverage test test/acceptance/*",
     "codecov": "./node_modules/.bin/codecov"
   },
+  "jest": {
+    "verbose": true
+  },
   "repository": {
     "type": "git",
     "url": "github.com:b2wads/b2wads-welcome"

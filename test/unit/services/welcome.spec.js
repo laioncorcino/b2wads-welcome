@@ -11,6 +11,22 @@
  * Saiba mais em: https://jestjs.io/en/
  */
 
-it('should pass', () => {
-  expect(true).toBe(true)
+const welcomeService = require("../../../services/welcome-service")
+
+describe("WelcomeService [Unit]", () => {
+  describe("welcome()", () => {
+
+    test("should return newB", async () => {
+      const newB = await welcomeService.welcome()
+
+      expect(newB).toMatchObject({
+        name: "Laion Corcino Faria",
+        email: "laion.faria@b2wdigital.com",
+        cel: "21 993460699",
+        college: "Sistemas de Informação - UFF",
+        job: "Software Developer Intern",
+        like: ["Read", "Watch baskteball", "Play instruments"]
+      })
+    })
+  })
 })
